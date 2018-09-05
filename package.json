@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open",
-    "compile": "webpack",
+    "build": "webpack",
     "lint": "eslint **/*.{js,jsx} --quiet"
   },
   "keywords": [],
