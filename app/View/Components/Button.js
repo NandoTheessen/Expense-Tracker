@@ -16,8 +16,8 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  text: '',
-  className: '',
+  text: null,
+  className: null,
   onClick: null,
 };
 
