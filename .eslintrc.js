@@ -1,23 +1,24 @@
 module.exports = {
   env: {
-    browser: true
+    browser: true,
   },
   extends: [
     'airbnb',
     'prettier',
     'eslint:recommended',
-    'plugin:react/recommended'
+    'plugin:react/recommended',
   ],
-  plugins: ['prettier', 'react'],
+  plugins: ['prettier', 'react', 'eslint-plugin-jest'],
   parserOptions: {
     ecmaVersion: 2016,
     sourceType: 'module',
     impliedStrict: true,
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   rules: {
-    semi: 'error'
-  }
+    semi: 'error',
+    'react/jsx-filename-extension': [1, { extensions: '.js' }],
+  },
 };
