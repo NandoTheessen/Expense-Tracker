@@ -5,8 +5,6 @@ const ContentContainer = ({ className }) => {
   return <div className={className} />;
 };
 
-export default ContentContainer;
-
 ContentContainer.propTypes = {
   className: PropTypes.string
 };
@@ -14,3 +12,5 @@ ContentContainer.propTypes = {
 ContentContainer.defaultProps = {
   className: null
 };
+
+export default ContentContainer;
