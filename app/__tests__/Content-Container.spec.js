@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, cleanup } from 'react-testing-library';
-import ContentContainer from './Content-Container';
+import ContentContainer from '../View/Components/Content-Container';
 
 afterEach(cleanup);
 
