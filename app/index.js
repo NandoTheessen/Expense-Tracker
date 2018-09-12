@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
+import ContentContainer from './View/Components/Content-Container';
 
 const App = function App() {
   return (
     <div>
-      <h1>Hello World!</h1>
+      <ContentContainer className="container-left" />
+      <ContentContainer className="container-right" />
     </div>
   );
 };

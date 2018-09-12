@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-const ContentContainer = ({ className }) => {
-  return <div className={className} />;
-};
+export default class ContentContainer extends Component {
+  render() {
+    const { className } = this.props;
+    const classNames = 'contentContainer ' + className;
+    return (
+      <div className={classNames}>
+        <h1>Hello World!</h1>
+      </div>
+    );
+  }
+}
 
 ContentContainer.propTypes = {
   className: PropTypes.string
@@ -12,5 +20,3 @@ ContentContainer.propTypes = {
 ContentContainer.defaultProps = {
   className: null
 };
-
-export default ContentContainer;

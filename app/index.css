@@ -1,6 +1,18 @@
-body {
-    background: green;
+:root {
+  --main-bg-color: #050609;
+  --sec-bg-color: #161821;
+  --main-ac-color: #ff087f;
+  --sec-ac-color: #0ad3ff;
+  --main-ba-color: #153b50;
 }
-.app {
-    color: black;
+
+body {
+  background: var(--main-bg-color);
+  color: var(--main-ac-color);
+  text-align: center;
+  padding-top: 50px;
+}
+
+div[class^='container-'] {
+  background: var(--sec-bg-color);
 }
