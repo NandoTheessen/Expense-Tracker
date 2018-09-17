@@ -14,7 +14,7 @@ module.exports = {
   collectCoverageFrom: ['**/app/**/*.js'],
   // important option if we want for certain paths to never drop below a certain coverage
   // going under these threshholds will give you errors in CI if you break them
-
+  setupTestFrameworkScriptFile: "./scripts/jest/setup.js",
   coverageThreshold: {
     global: {
       statements: 18,

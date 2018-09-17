@@ -13,7 +13,7 @@
     ]
   },
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest --watch --verbose",
     "start": "webpack-dev-server --open",
     "build": "webpack",
     "lint": "eslint **/*.{js} --quiet"
