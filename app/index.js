@@ -1,24 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import styled from 'styled-components';
 import registerServiceWorker from './registerServiceWorker';
 import ContentContainer from './View/Components/Content-Container';
 import Button from './View/Components/Button';
-import { mainBG, mainAC } from './utils/colors';
 
 const Body = styled.div`
-  background: ${mainBG};
-  color: ${mainAC};
+  height: 100vh;
   text-align: center;
   padding-top: 50px;
+  --primary-bg: #050609;
+  --secondary-bg: #161821;
+  --primary-accent: #ff087f;
+  --secondary-accent: #0ad3ff;
+  --main-BA: '#153b50';
+  background: var(--primary-bg);
+  color: var(--secondary--accent);
 `;
 
 const App = function App() {
   return (
     <Body>
-      <ContentContainer className="container-left" />
-      <ContentContainer className="container-right" />
+      <ContentContainer />
+      <ContentContainer />
       <Button text="AWESOME" onClick={() => alert('uhoooooh')} />
     </Body>
   );

@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const Container = styled.div`
+  --primary-accent: #ffffff;
+  background: var(--secondary-bg, black);
+  color: var(--primary-accent);
+`;
 
 export default class ContentContainer extends Component {
   render() {
-    const { className } = this.props;
-    const classNames = 'contentContainer ' + className;
     return (
-      <div className={classNames} data-testid="content-container">
+      <Container
+        Style={{ background: '#ffffff' }}
+        data-testid="content-container"
+      >
         <h1>Hello World!</h1>
-      </div>
+      </Container>
     );
   }
 }
-
-ContentContainer.propTypes = {
-  className: PropTypes.string
-};
-
-ContentContainer.defaultProps = {
-  className: null
-};
