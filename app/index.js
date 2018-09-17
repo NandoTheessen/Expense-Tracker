@@ -8,7 +8,6 @@ import Button from './View/Components/Button';
 const Body = styled.div`
   height: 100vh;
   text-align: center;
-  padding-top: 50px;
   --primary-bg: #050609;
   --secondary-bg: #161821;
   --primary-accent: #ff087f;
@@ -21,8 +20,8 @@ const Body = styled.div`
 const App = function App() {
   return (
     <Body>
-      <ContentContainer />
-      <ContentContainer />
+      <ContentContainer heading="Hello World!" />
+      <ContentContainer heading="Hello World!" />
       <Button text="AWESOME" onClick={() => alert('uhoooooh')} />
     </Body>
   );

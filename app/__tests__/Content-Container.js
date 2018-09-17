@@ -2,13 +2,9 @@ import React from 'react';
 import { render } from 'react-testing-library';
 import ContentContainer from '../View/Components/Content-Container';
 
-test('Renders a div element that has assigned className', () => {
-  const className = 'contentcontainer';
+test('Renders a div element that has passed header', () => {
+  const text = 'Hello World!';
+  const { getByTestId } = render(<ContentContainer heading={text} />);
 
-  const { getByTestId } = render(<ContentContainer className={className} />);
-
-  expect(getByTestId('content-container')).toHaveAttribute(
-    'class',
-    'contentContainer ' + className
-  );
+  expect(getByTestId('content-container')).toHaveTextContent(text);
 });

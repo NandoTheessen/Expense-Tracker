@@ -7,7 +7,7 @@ const StyledButton = styled.button`
   width: 400px;
 `;
 
-const Button = ({ className, text, onClick }) => {
+const Button = ({ text, onClick }) => {
   return (
     <StyledButton type="button" onClick={onClick}>
       {text}
@@ -17,13 +17,11 @@ const Button = ({ className, text, onClick }) => {
 
 Button.propTypes = {
   text: PropTypes.string,
-  className: PropTypes.string,
   onClick: PropTypes.func
 };
 
 Button.defaultProps = {
   text: null,
-  className: null,
   onClick: null
 };
 
