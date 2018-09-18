@@ -20,7 +20,9 @@ const Body = styled.div`
 const App = function App() {
   return (
     <Body>
-      <ContentContainer heading="Hello World!" />
+      <ContentContainer heading="Hello World!">
+        <h6>Test Child</h6>
+      </ContentContainer>
       <ContentContainer heading="Hello World!" />
       <Button text="AWESOME" onClick={() => alert('uhoooooh')} />
     </Body>

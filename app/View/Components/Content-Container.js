@@ -6,10 +6,11 @@ const Container = styled.div`
   color: var(--primary-accent);
 `;
 
-const ContentContainer = ({ heading }) => {
+const ContentContainer = ({ heading, children }) => {
   return (
     <Container data-testid="content-container">
       <h1>{heading}</h1>
+      {children}
     </Container>
   );
 };
