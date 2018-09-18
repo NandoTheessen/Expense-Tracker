@@ -1,6 +1,6 @@
-body {
-    background: green;
+html {
+  background: #050609;
 }
-.app {
-    color: black;
+body {
+  margin: 0;
 }
