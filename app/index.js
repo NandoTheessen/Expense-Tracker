@@ -5,8 +5,11 @@ import registerServiceWorker from './registerServiceWorker';
 import ContentContainer from './View/Components/Content-Container';
 import Button from './View/Components/Button';
 import './index.css';
+import Menu from './View/Components/Menu';
 
 const Body = styled.div`
+  width: 100%;
+  display: flex;
   height: 100vh;
   text-align: center;
   --primary-bg: #050609;
@@ -21,11 +24,11 @@ const Body = styled.div`
 const App = function App() {
   return (
     <Body>
+      <Menu />
       <ContentContainer heading="Hello World!">
         <h6>Test Child</h6>
       </ContentContainer>
       <ContentContainer heading="Hello World!" />
-      <Button text="AWESOME" onClick={() => alert('uhoooooh')} />
     </Body>
   );
 };
