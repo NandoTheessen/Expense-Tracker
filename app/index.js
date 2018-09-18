@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import registerServiceWorker from './registerServiceWorker';
 import ContentContainer from './View/Components/Content-Container';
 import Button from './View/Components/Button';
+import './index.css';
 
 const Body = styled.div`
   height: 100vh;
